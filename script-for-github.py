@@ -11,7 +11,7 @@ images = soup.find_all('img')
 for image in images:
 	link = image['src']
 	name = image['alt']
-	# with open(name.replace(' ', '-').replace('/', '').replace('!','').replace('|','-')+'.jpg', 'wb') as f:
-	# 	im = requests.get(link)
-	# 	f.write(im.content)
+	with open(name.replace(' ', '-').replace('/', '').replace('!','').replace('|','-')+'.jpg', 'wb') as f:
+		im = requests.get(link)
+		f.write(im.content)
 	print(f"{name} and the link is {link}\n")
