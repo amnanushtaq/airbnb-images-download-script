@@ -1,4 +1,4 @@
-#Python script to download images from airbnb
+# Python script to download images from airbnb
 
 Make sure python and pip is installed. 
 before running the 'script-for-github.py' run the following commands in you cmd:
